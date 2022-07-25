@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url("./background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.modal-overlay {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.left-modal {
+  left: 5%;
+  background: rgb(255, 255, 255);
+  height: 60vh;
+  width: 30vw;
+  position: absolute;
+  text-align: center;
+}
+
+.right-modal {
+  right: 5%;
+  background: rgb(255, 255, 255);
+  height: 60vh;
+  width: 30vw;
+  position: absolute;
+  text-align: center;
+}
+
+.name {
+  margin-top: 0;
+  font-size: 1.5vw;
+}
+
+.videoSize {
+  width: 60vw;
+  visibility: hidden;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+#loli {
+  left: 15%;
+  position: absolute;
+  z-index: 100;
+  width: 6%;
+  height: auto;
+}
+#loli_bro {
+  right: 0;
+  position: absolute;
+  z-index: 100;
+  width: 360px;
+  height: 100vh;
+}
+
+.title {
+  font-family: "Creepster", cursive;
+  color: rgb(182, 27, 27);
+  background: black;
+  margin-top: 0;
+  width: 100%;
+  font-size: 5vw;
+  height: 12vh;
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+}
+
+.age-reveal {
+  position: absolute;
+  bottom: 5%;
+  height: 10%;
+  width: 60%;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  font-size: 3vw;
+  font-family: "Anton", sans-serif;
+  color: rgb(61, 25, 95);
+}
+
+.brand {
+  font-family: "Anton", sans-serif;
+  font-size: 2.5vw;
+  text-align: center;
+  color: rgb(95, 49, 170);
+}
+
+.font {
+  font-family: "Anton", sans-serif;
+  font-weight: 700;
+  color: rgb(132, 86, 207);
+  background: rgb(0, 0, 0);
+}
+
+.video-container {
+  margin: auto;
+  background: white;
+  position: absolute;
+  visibility: hidden;
+}
+
+.start-modal {
+  position: relative;
+  margin: auto;
+  height: 40vh;
+  width: 20vw;
+  background: white;
+  z-index: 10;
+}
+
+.startBtn {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background: rgb(99, 99, 236);
+  padding: 1rem 2rem;
+  font-family: "oswald" sans-serif;
+  font-weight: 700;
+}
+
+.rules {
+  font-family: "Oswald", sans-serif;
+  font-weight: 900;
+  color: rgb(127, 48, 173);
+  text-transform: uppercase;
+  padding: 0rem 1rem;
+  font-size: 1.2vw;
+}
+
+.endText {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: rgb(127, 48, 173);
+  padding: 2rem 1rem;
+  font-size: 2vw;
+}
+
+.close-btn {
+  position: absolute;
+  background: rgb(224, 34, 9);
+  border: none;
+  right: 0;
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  z-index: 100;
+}
+
+.show {
+  visibility: visible;
+}
+
+img {
+  width: 30vw;
+  height: 55vh;
+}
+
+@media screen and (max-width: 550px) {
+  .start-modal {
+    height: 30vh;
+    width: 60vw;
+  }
+
+  .brand {
+    font-size: 5vw;
+  }
+
+  .startBtn {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .title {
+    font-size: 15vw;
+    background: rgb(0, 0, 0, 0.4);
+    height: 22vh;
+  }
+
+  .left-modal {
+    width: 40vw;
+    height: 30vh;
+  }
+
+  .right-modal {
+    width: 40vw;
+    height: 30vh;
+  }
+  img {
+    width: 40vw;
+    height: 28vh;
+  }
+
+  .videoSize {
+    width: 100vw;
+  }
+
+  .color {
+    background: url("loli_police.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .close-btn {
+    padding: 0.1rem 0.5rem;
+  }
+  .rules {
+    font-size: 0.8em;
+  }
+  .endText {
+    font-size: 5vw;
+  }
+  .age-reveal {
+    background: rgb(238, 195, 247);
+    font-size: 6vw;
+    width: 90%;
+    color: rgb(109, 28, 163);
+  }
+}
